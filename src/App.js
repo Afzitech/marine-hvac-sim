@@ -203,17 +203,17 @@ function LandingPage({ onStart }) {
              <h3 className="text-cyan-600 tracking-[0.3em] font-bold text-sm mb-6">PRESENTED BY</h3>
              
              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-16 text-center">
-                <div className="bg-[#04060a] border border-cyan-900/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.1)] hover:border-cyan-400 transition-colors">
+                <div className="bg-[#04060a] border border-cyan-400/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.3)] hover:border-cyan-400 transition-colors">
                    <div className="font-black text-cyan-100 text-lg whitespace-nowrap">Cyril Dheeran</div>
-                   <div className="text-sm text-cyan-600 font-bold mt-1 tracking-widest">2303608023</div>
+                   <div className="text-sm text-cyan-400 font-bold mt-1 tracking-widest">2303608023</div>
                 </div>
-                <div className="bg-[#04060a] border border-cyan-900/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.1)] hover:border-cyan-400 transition-colors">
+                <div className="bg-[#04060a] border border-cyan-400/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.3)] hover:border-cyan-400 transition-colors">
                    <div className="font-black text-cyan-100 text-lg whitespace-nowrap">Mohammed Dhafiq</div>
-                   <div className="text-sm text-cyan-600 font-bold mt-1 tracking-widest">2303608039</div>
+                   <div className="text-sm text-cyan-400 font-bold mt-1 tracking-widest">2303608039</div>
                 </div>
-                <div className="bg-[#04060a] border border-cyan-900/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.1)] hover:border-cyan-400 transition-colors">
+                <div className="bg-[#04060a] border border-cyan-400/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.3)] hover:border-cyan-400 transition-colors">
                    <div className="font-black text-cyan-100 text-lg whitespace-nowrap">M Athul Dev</div>
-                   <div className="text-sm text-cyan-600 font-bold mt-1 tracking-widest">2303608037</div>
+                   <div className="text-sm text-cyan-400 font-bold mt-1 tracking-widest">2303608037</div>
                 </div>
                 <div className="bg-[#04060a] border border-cyan-400/50 p-4 rounded-lg shadow-[0_0_20px_rgba(8,145,178,0.3)] hover:border-cyan-400 transition-colors">
                    <div className="font-black text-cyan-100 text-lg whitespace-nowrap">Afsal Rahman J</div>
