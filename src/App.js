@@ -500,7 +500,7 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         { text: "Increase Port engine speed to outrun the smoke.", correct: false }
       ],
       logs: [
-        " Vessel underway in Baltic Sea. Port and Stbd Engines operating normally.",
+        "Vessel underway in Baltic Sea. Port and Stbd Engines operating normally.",
         "Heavy vibrations detected in the Starboard Engine block.",
         "Starboard Engine suffers a catastrophic mechanical failure. Fire breaks out.",
         "Toxic smoke rises into the shared, interconnected ventilation ducting.",
