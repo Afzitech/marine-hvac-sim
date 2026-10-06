@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { AlertOctagon, Activity, Wind, Flame, Skull, Droplets, Thermometer, Gauge, CheckCircle2, XCircle, User, Snowflake, AlertTriangle, PlayCircle, Volume2, VolumeX, Zap, BookOpen, Code, Maximize, Minimize } from 'lucide-react';
+import { AlertOctagon, Activity, Wind, Flame, Skull, Droplets, Thermometer, Gauge, CheckCircle2, XCircle, User, Snowflake, AlertTriangle, PlayCircle, Volume2, VolumeX, Zap, BookOpen, Code, Maximize, Minimize, Terminal } from 'lucide-react';
 
 export default function MarineHVACApp() {
   const [showLanding, setShowLanding] = useState(true);
@@ -241,22 +241,22 @@ function ReferencesView() {
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">Regina Seaways (2018)</div>
               <div className="text-sm text-cyan-700 mb-2">Engine Cross-Contamination</div>
-              <p className="text-slate-400 text-xs">Reference: Reuters & gCaptain.</p>
+              <p className="text-slate-400 text-xs">Reference: Official investigation reports detailing the catastrophic starboard engine failure and subsequent toxic smoke cross-contamination via interconnected ventilation ducts in the Baltic Sea.</p>
             </li>
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">F/V Kaltan (2026)</div>
               <div className="text-sm text-cyan-700 mb-2">Confined Space Gas Leak</div>
-              <p className="text-slate-400 text-xs">Reference: ShipFinder Maritime Accidents Archive.</p>
+              <p className="text-slate-400 text-xs">Reference: Maritime accident reports regarding the Freon gas leak during compressor repairs at Gamcheon Port, Busan, leading to heavy gas displacement in an unventilated fish hold.</p>
             </li>
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">INS Ranvir (2022)</div>
               <div className="text-sm text-cyan-700 mb-2">Mislabeled Refrigerant Explosion</div>
-              <p className="text-slate-400 text-xs">Reference: Hindustan Times / Indian Defense News.</p>
+              <p className="text-slate-400 text-xs">Reference: Reports detailing the forward machinery room explosion aboard the destroyer caused by accidentally charging the AC plant with highly flammable R-152a hydrocarbon instead of standard R-22 Freon.</p>
             </li>
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">Al-Salam Boccaccio 98</div>
               <div className="text-sm text-cyan-700 mb-2">Ro-Ro Deck Ventilation Fed Fire</div>
-              <p className="text-slate-400 text-xs">Reference: Panama Maritime Authority / RoRoSAFE.</p>
+              <p className="text-slate-400 text-xs">Reference: Investigation into the Red Sea sinking, highlighting the critical failure to secure forced-draft vehicle deck ventilation fans, which continuously fed oxygen to the internal fire.</p>
             </li>
           </ul>
         </div>
@@ -266,23 +266,32 @@ function ReferencesView() {
           <h3 className="text-2xl font-black text-cyan-100 tracking-widest mb-6 flex items-center gap-3 border-b border-cyan-900 pb-4">
             <Code className="text-blue-500" /> DIGITAL TWIN ARCHITECTURE
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-blue-500 transition-colors">
                <div className="w-16 h-16 bg-blue-950 rounded-full flex items-center justify-center mb-4 border border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
                   <Activity size={32} className="text-blue-400" />
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">CLAUDE & GEMINI</div>
                <div className="text-xs text-blue-400 font-bold mb-2">AI LOGIC & CODE GENERATION</div>
-               <p className="text-slate-400 text-[10px]">Immersive presentation sequencing generated with AI assistance.</p>
+               <p className="text-slate-400 text-[10px]">React architectures, interactive thermodynamics logic, dynamic SVG animations, and immersive presentation sequencing generated with AI assistance.</p>
             </div>
             
+            <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-sky-500 transition-colors">
+               <div className="w-16 h-16 bg-sky-950 rounded-full flex items-center justify-center mb-4 border border-sky-500 shadow-[0_0_15px_rgba(14,165,233,0.3)]">
+                  <Terminal size={32} className="text-sky-400" />
+               </div>
+               <div className="font-black text-white text-xl tracking-widest mb-2">VS CODE</div>
+               <div className="text-xs text-sky-400 font-bold mb-2">INTEGRATED DEVELOPMENT ENVIRONMENT</div>
+               <p className="text-slate-400 text-[10px]">Local code editing, component structuring, and project workspace management.</p>
+            </div>
+
             <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-purple-500 transition-colors">
                <div className="w-16 h-16 bg-purple-950 rounded-full flex items-center justify-center mb-4 border border-purple-500 shadow-[0_0_15px_rgba(168,85,247,0.3)]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-purple-400"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">GITHUB</div>
                <div className="text-xs text-purple-400 font-bold mb-2">VERSION CONTROL & REPOSITORY</div>
-               <p className="text-slate-400 text-[10px]">Source code storage.</p>
+               <p className="text-slate-400 text-[10px]">Source code storage, iterative branch management, component organization, and continuous integration pipeline handling.</p>
             </div>
 
             <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-white transition-colors">
@@ -291,7 +300,7 @@ function ReferencesView() {
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">VERCEL</div>
                <div className="text-xs text-slate-300 font-bold mb-2">CLOUD HOSTING & DEPLOYMENT</div>
-               <p className="text-slate-400 text-[10px]">Live global network deployment.</p>
+               <p className="text-slate-400 text-[10px]">Live global edge-network deployment, SSL certification, and real-time production build rendering for the interactive web application.</p>
             </div>
           </div>
         </div>
@@ -310,7 +319,6 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
   const [quizState, setQuizState] = useState('hidden');
   const [wrongPath, setWrongPath] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
-  const [showBriefing, setShowBriefing] = useState(true);
 
   const fireAudio = useRef(null);
   const alarmAudio = useRef(null);
@@ -348,7 +356,7 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
   useEffect(() => {
     if (!fireAudio.current || !alarmAudio.current) return;
 
-    if (isFullScreen && !showBriefing) {
+    if (isFullScreen) {
       if (activeScenario === 0) {
         if (step < 6 || quizState === 'success') {
           engineAudio.current.volume = isMuted ? 0 : 0.5;
@@ -470,7 +478,7 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
       boomAudio.current.pause();
       boomPlayed.current = false;
     }
-  }, [step, isFullScreen, activeScenario, quizState, wrongPath, isMuted, showBriefing]);
+  }, [step, isFullScreen, activeScenario, quizState, wrongPath, isMuted]);
 
   const scenarios = [
     {
@@ -480,29 +488,19 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
       fault: "Interconnected crankcase ventilation without isolation dampers.",
       totalSteps: 6,
       quizStep: 3,
-      details: [
-        "Vessel Profile: DFDS Regina Seaways, a Ro-Ro passenger ferry.",
-        "Location: Baltic Sea, en route from Kiel, Germany to Klaipeda, Lithuania.",
-        "Incident Date: October 2, 2018.",
-        "Personnel Onboard: 335 passengers and crew present during the incident.",
-        "Initial Anomaly: Heavy vibration followed by a catastrophic mechanical failure in the starboard main engine.",
-        "Root Cause: Engine components breached the crankcase, causing an immediate engine room fire.",
-        "HVAC Design Flaw: The port and starboard engine rooms shared interconnected ventilation ducting without automatic fire isolation dampers.",
-        "Consequence: Toxic smoke from the starboard fire was drawn directly into the running port engine, choking it and causing a total blackout."
-      ],
       quizPrompt: "Starboard engine catches fire. Smoke is rising into the shared ventilation duct. Action?",
       options: [
         { text: "EMERGENCY: Manually close the cross-ventilation isolation dampers.", correct: true },
         { text: "Increase Port engine speed to outrun the smoke.", correct: false }
       ],
       logs: [
-        "Vessel underway in Baltic Sea. Port and Stbd Engines operating normally.",
-        "Heavy vibrations detected in the Starboard Engine block.",
-        "Starboard Engine suffers a catastrophic mechanical failure. Fire breaks out.",
-        "Toxic smoke rises into the shared, interconnected ventilation ducting.",
-        "Smoke travels freely across the un-dampered duct toward the running Port engine.",
-        "Port engine air intakes ingest thick toxic smoke and particulate matter.",
-        "Port engine chokes and stalls. Blackout. PROPULSION LOST."
+        "SLIDE 1: 2200 HRS - Vessel underway in Baltic Sea. Port and Stbd Engines operating normally.",
+        "SLIDE 2: 2210 HRS - Heavy vibrations detected in the Starboard Engine block.",
+        "SLIDE 3: 2212 HRS - Starboard Engine suffers a catastrophic mechanical failure. Fire breaks out.",
+        "SLIDE 4: 2215 HRS - Toxic smoke rises into the shared, interconnected ventilation ducting.",
+        "SLIDE 5: 2216 HRS - Smoke travels freely across the un-dampered duct toward the running Port engine.",
+        "SLIDE 6: 2218 HRS - Port engine air intakes ingest thick toxic smoke and particulate matter.",
+        "SLIDE 7: 2220 HRS - Port engine chokes and stalls. Blackout. PROPULSION LOST."
       ]
     },
     {
@@ -512,30 +510,20 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
       fault: "Refrigerant leak during repairs released massive amounts of Freon into an unventilated hold.",
       totalSteps: 7,
       quizStep: 4,
-      details: [
-        "Vessel Profile: F/V Kaltan, a commercial fishing trawler.",
-        "Location: Docked for repairs at Gamcheon Port, Busan, South Korea.",
-        "Incident Date: September 15, 2026.",
-        "Operational Status: Vessel was undergoing scheduled maintenance on its main refrigeration plant.",
-        "Initial Failure: A mechanical seal ruptured on the main Freon compressor.",
-        "Gas Physics: Massive amounts of Freon coolant leaked out. Freon is significantly heavier than air.",
-        "Hazard Development: The toxic gas flowed downwards, pooling in and completely filling the unventilated lower fish hold.",
-        "Consequence: Crew members entered the confined space without SCBA gear, leading to immediate asphyxiation and catastrophic fatalities."
-      ],
       quizPrompt: "A heavy Freon leak is detected. The gas is heavier than air. Crew members want to enter the lower deck immediately to inspect. Action?",
       options: [
         { text: "EMERGENCY: Deny entry. Evacuate area and require SCBA gear before entering confined spaces.", correct: true },
         { text: "Send them in immediately with standard coveralls to find and patch the leak fast.", correct: false }
       ],
       logs: [
-        "F/V Kaltan docked for repairs at Gamcheon Port, Busan, South Korea.",
-        "Refrigeration plant mechanical seal fails during maintenance.",
-        "Heavy Freon coolant leaks out and begins sinking into the unventilated fish hold.",
-        "Pressure drop alarm sounds in the wheelhouse.",
-        "Crew members rush to the lower deck entrance without protective equipment.",
-        "Crew descends into the hold where Freon has displaced all oxygen.",
-        "Crew members suffer immediate cardiac arrest due to asphyxiation.",
-        "Emergency services arrive. CATASTROPHIC FATALITIES."
+        "SLIDE 1: Sep 15, 2026 - F/V Kaltan docked for repairs at Gamcheon Port, Busan, South Korea.",
+        "SLIDE 2: 08:30 HRS - Refrigeration plant mechanical seal fails during maintenance.",
+        "SLIDE 3: 08:32 HRS - Heavy Freon coolant leaks out and begins sinking into the unventilated fish hold.",
+        "SLIDE 4: 08:35 HRS - Pressure drop alarm sounds in the wheelhouse.",
+        "SLIDE 5: 08:36 HRS - Crew members rush to the lower deck entrance without protective equipment.",
+        "SLIDE 6: 08:37 HRS - Crew descends into the hold where Freon has displaced all oxygen.",
+        "SLIDE 7: 08:40 HRS - Crew members suffer immediate cardiac arrest due to asphyxiation.",
+        "SLIDE 8: 08:45 HRS - Emergency services arrive. CATASTROPHIC FATALITIES."
       ]
     },
     {
@@ -545,32 +533,22 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
       fault: "System charged with R-152a (flammable) instead of R-22.",
       totalSteps: 9,
       quizStep: 4,
-      details: [
-        "Vessel Profile: INS Ranvir (D54), a Rajput-class guided-missile destroyer of the Indian Navy.",
-        "Location: Naval Dockyard, Mumbai, India.",
-        "Incident Date: January 18, 2022.",
-        "Operation: Routine maintenance and topping up of the forward AC plant refrigerant (R-22).",
-        "Root Cause: Shore contractors mistakenly supplied a cylinder containing R-152a, a highly flammable hydrocarbon gas.",
-        "Initial Failure: System pressure mismatch caused the compressor seal to fail, leaking the explosive gas into the forward machinery room.",
-        "Ignition Source: An automatic electrical contactor relay tripped, generating a high-voltage arc spark.",
-        "Consequence: A massive thermobaric explosion caused a hull breach, significant internal structural damage, and tragic casualties."
-      ],
       quizPrompt: "Contractor is connecting a RED cylinder explicitly labeled 'R-152a'. What is your immediate action?",
       options: [
         { text: "EMERGENCY STOP: Halt operation immediately. R-152a is highly flammable.", correct: true },
         { text: "Proceed with charging. It is a standard drop-in replacement.", correct: false }
       ],
       logs: [
-        "INS Ranvir docked. Forward AC Plant operating at standard capacity.",
-        "Routine topping-up of R-22 refrigerant approved by Engineering Officer.",
-        "Shore contractor arrives in the forward machinery room with cylinders.",
-        "Contractor prepares manifold gauges. Cylinder is explicitly labeled 'R-152a'.",
-        "Contractor begins attaching the high-pressure charging hose to the AC low-side valve.",
-        "Cylinder valve opened. Highly flammable R-152a hydrocarbon enters the system.",
-        "System pressure mismatch causes a mechanical seal failure on the compressor casing.",
-        "Combustible gas begins pooling in the unventilated compartment. Toxic gas alarms sound.",
-        "An automatic electrical contactor relay trips, generating a high-voltage arc spark.",
-        "Ignition. Expanding gas creates a massive shockwave. HULL BREACH. CATASTROPHIC LOSS."
+        "SLIDE 1: 0800 HRS - INS Ranvir docked. Forward AC Plant operating at standard capacity.",
+        "SLIDE 2: 0810 HRS - Routine topping-up of R-22 refrigerant approved by Engineering Officer.",
+        "SLIDE 3: 0815 HRS - Shore contractor arrives in the forward machinery room with cylinders.",
+        "SLIDE 4: 0818 HRS - Contractor prepares manifold gauges. Cylinder is explicitly labeled 'R-152a'.",
+        "SLIDE 5: 0820 HRS - Contractor begins attaching the high-pressure charging hose to the AC low-side valve.",
+        "SLIDE 6: 0822 HRS - Cylinder valve opened. Highly flammable R-152a hydrocarbon enters the system.",
+        "SLIDE 7: 0823 HRS - System pressure mismatch causes a mechanical seal failure on the compressor casing.",
+        "SLIDE 8: 0824 HRS - Combustible gas begins pooling in the unventilated compartment. Toxic gas alarms sound.",
+        "SLIDE 9: 0825 HRS - An automatic electrical contactor relay trips, generating a high-voltage arc spark.",
+        "SLIDE 10: 0825:02 HRS - Ignition. Expanding gas creates a massive shockwave. HULL BREACH. CATASTROPHIC LOSS."
       ]
     },
     {
@@ -580,31 +558,21 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
       fault: "Failure to secure forced-draft HVAC ventilation during a vehicle deck fire.",
       totalSteps: 8,
       quizStep: 3,
-      details: [
-        "Vessel Profile: Al-Salam Boccaccio 98, an Egyptian Ro-Ro passenger ferry.",
-        "Location: Red Sea, en route from Duba, Saudi Arabia to Safaga, Egypt.",
-        "Incident Date: February 3, 2006.",
-        "Initial Event: A localized fire started in the lower vehicle deck, likely from a parked vehicle.",
-        "HVAC Flaw: The crew failed to secure the forced-draft supply and exhaust ventilation fans for the vehicle deck.",
-        "Fire Dynamics: The massive influx of fresh oxygen acted as a bellows, expanding the fire uncontrollably.",
-        "Human Error: High-volume seawater was used for firefighting, but blocked scuppers prevented drainage.",
-        "Consequence: Thousands of tons of trapped water caused the Free Surface Effect, capsizing and sinking the ship."
-      ],
       quizPrompt: "A vehicle deck fire is confirmed. The massive supply and exhaust ventilation fans are currently running. What is your immediate HVAC-related action?",
       options: [
         { text: "EMERGENCY STOP all deck fans and manually close fire dampers to starve the fire of oxygen.", correct: true },
         { text: "Keep fans running on HIGH to clear the smoke so the fire team can see.", correct: false }
       ],
       logs: [
-        "Ro-Ro vehicle deck fully loaded. Forced draft HVAC active at 100% capacity.",
-        "Spark in a parked vehicle ignites a localized fire. Smoke begins to rise.",
-        "Smoke detectors trigger on the bridge. General Alarm sounds.",
-        "CRITICAL OVERSIGHT. Crew responds with hoses, but leaves the massive deck ventilation fans running.",
-        "The continuous supply of fresh air acts as a bellows, feeding oxygen to the fire.",
-        "Fire expands uncontrollably. Crew uses high-volume seawater firefighting monitors.",
-        "Scuppers block with debris. Thousands of tons of water accumulate on the deck.",
-        "Free Surface Effect shifts the center of gravity. Vessel severely destabilized.",
-        "The ship capsizes and sinks. CATASTROPHIC LOSS."
+        "SLIDE 1: 2300 HRS - Ro-Ro vehicle deck fully loaded. Forced draft HVAC active at 100% capacity.",
+        "SLIDE 2: 2315 HRS - Spark in a parked vehicle ignites a localized fire. Smoke begins to rise.",
+        "SLIDE 3: 2320 HRS - Smoke detectors trigger on the bridge. General Alarm sounds.",
+        "SLIDE 4: 2322 HRS - CRITICAL OVERSIGHT. Crew responds with hoses, but leaves the massive deck ventilation fans running.",
+        "SLIDE 5: 2325 HRS - The continuous supply of fresh air acts as a bellows, feeding oxygen to the fire.",
+        "SLIDE 6: 2330 HRS - Fire expands uncontrollably. Crew uses high-volume seawater firefighting monitors.",
+        "SLIDE 7: 0030 HRS - Scuppers block with debris. Thousands of tons of water accumulate on the deck.",
+        "SLIDE 8: 0100 HRS - Free Surface Effect shifts the center of gravity. Vessel severely destabilized.",
+        "SLIDE 9: 0115 HRS - The ship capsizes and sinks. CATASTROPHIC LOSS."
       ]
     }
   ];
@@ -642,48 +610,9 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
     setQuizState('hidden');
     setWrongPath(false);
     setIsFullScreen(false);
-    setShowBriefing(true);
   };
 
   if (isFullScreen) {
-    if (showBriefing) {
-      return (
-        <div className="fixed inset-0 z-[60] bg-[#04060a] flex flex-col items-center justify-center p-4 md:p-8 font-mono text-cyan-500 overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-[#04060a] to-[#04060a]">
-           <div className="max-w-4xl w-full max-h-full bg-slate-900/80 border border-cyan-700 rounded-xl shadow-[0_0_50px_rgba(8,145,178,0.2)] flex flex-col overflow-hidden">
-              <div className="bg-black border-b border-cyan-800 p-4 md:p-6 text-center shrink-0">
-                <AlertOctagon size={40} className="mx-auto text-cyan-500 mb-2 md:mb-4" />
-                <h2 className="text-2xl md:text-4xl font-black text-white tracking-widest">{active.title}</h2>
-                <p className="text-cyan-400 text-sm md:text-lg mt-1 md:mt-2 tracking-widest">{active.subtitle}</p>
-              </div>
-              <div className="p-4 md:p-8 overflow-y-auto flex-1">
-                <h3 className="text-lg md:text-xl font-bold text-cyan-600 mb-4 border-b border-cyan-900 pb-2">INCIDENT BRIEFING & TECHNICAL DETAILS</h3>
-                <ul className="space-y-3 md:space-y-4">
-                  {active.details.map((detail, idx) => {
-                    const [prefix, ...rest] = detail.split(':');
-                    return (
-                      <li key={idx} className="flex gap-3 md:gap-4 items-start">
-                        <span className="text-cyan-400 font-bold mt-1">&gt;</span>
-                        <span className="text-cyan-100 text-sm md:text-lg leading-relaxed">
-                          <strong className="text-cyan-300">{prefix}:</strong>{rest.join(':')}
-                        </span>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-              <div className="bg-black border-t border-cyan-900 p-4 md:p-6 flex justify-between items-center shrink-0">
-                <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="text-cyan-700 hover:text-cyan-400 font-bold flex items-center gap-2 transition-colors">
-                  <XCircle size={20} /> CANCEL
-                </button>
-                <button onClick={() => setShowBriefing(false)} className="bg-cyan-600 hover:bg-cyan-500 text-black px-4 md:px-8 py-3 md:py-4 font-black tracking-widest rounded flex items-center gap-2 md:gap-3 shadow-[0_0_20px_rgba(8,145,178,0.4)] transition-all">
-                  INITIALIZE SIMULATION <PlayCircle size={24} />
-                </button>
-              </div>
-           </div>
-        </div>
-      );
-    }
-
     return (
       <div className="fixed inset-0 z-50 bg-[#04060a] flex flex-col font-mono text-cyan-500 overflow-hidden">
         <button 
@@ -960,12 +889,12 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
 
         {/* FOOTER CONTROLS */}
         <div className="min-h-[100px] bg-black border-t border-cyan-900 flex items-center justify-between px-4 md:px-12 relative z-[80]">
-          <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="text-cyan-600 hover:text-cyan-400 font-bold tracking-widest flex items-center gap-2 md:gap-3 text-sm md:text-lg transition-colors">
+          <button onClick={() => setIsFullScreen(false)} className="text-cyan-600 hover:text-cyan-400 font-bold tracking-widest flex items-center gap-2 md:gap-3 text-sm md:text-lg transition-colors">
             <XCircle size={24} /> EXIT
           </button>
 
           {quizState === 'success' ? (
-            <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="bg-green-600 text-black px-4 md:px-10 py-3 md:py-5 font-black tracking-widest text-sm md:text-xl rounded hover:bg-green-500 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all">
+            <button onClick={() => setIsFullScreen(false)} className="bg-green-600 text-black px-4 md:px-10 py-3 md:py-5 font-black tracking-widest text-sm md:text-xl rounded hover:bg-green-500 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all">
               MISSION ACCOMPLISHED
             </button>
           ) : (step >= active.totalSteps && wrongPath) ? (
@@ -1007,7 +936,7 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         </div>
 
         <button
-          onClick={() => {setIsFullScreen(true); setShowBriefing(true);}}
+          onClick={() => setIsFullScreen(true)}
           className="w-full bg-cyan-600 hover:bg-cyan-500 text-black font-black text-lg p-5 rounded flex items-center justify-center gap-3 transition-all shadow-[0_0_20px_rgba(8,145,178,0.4)] hover:scale-[1.02]">
           LAUNCH DIGITAL TWIN
         </button>
