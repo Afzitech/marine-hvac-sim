@@ -3,7 +3,7 @@ import { AlertOctagon, Activity, Wind, Flame, Skull, Droplets, Thermometer, Gaug
 
 export default function MarineHVACApp() {
   const [showLanding, setShowLanding] = useState(true);
-  const [activeTab, setActiveTab] = useState('incidents'); // 'incidents', 'simulator', 'references'
+  const [activeTab, setActiveTab] = useState('incidents');
   const [isFullScreen, setIsFullScreen] = useState(false);
   const [isBrowserFullscreen, setIsBrowserFullscreen] = useState(false);
 
@@ -648,22 +648,22 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
   if (isFullScreen) {
     if (showBriefing) {
       return (
-        <div className="fixed inset-0 z-50 bg-[#04060a] flex flex-col items-center justify-center p-8 font-mono text-cyan-500 overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-[#04060a] to-[#04060a]">
-           <div className="max-w-4xl w-full bg-slate-900/80 border border-cyan-700 rounded-xl shadow-[0_0_50px_rgba(8,145,178,0.2)] flex flex-col overflow-hidden">
-              <div className="bg-black border-b border-cyan-800 p-6 text-center">
-                <AlertOctagon size={48} className="mx-auto text-cyan-500 mb-4" />
-                <h2 className="text-3xl md:text-5xl font-black text-white tracking-widest">{active.title}</h2>
-                <p className="text-cyan-400 text-lg mt-2 tracking-widest">{active.subtitle}</p>
+        <div className="fixed inset-0 z-[60] bg-[#04060a] flex flex-col items-center justify-center p-4 md:p-8 font-mono text-cyan-500 overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-[#04060a] to-[#04060a]">
+           <div className="max-w-4xl w-full max-h-full bg-slate-900/80 border border-cyan-700 rounded-xl shadow-[0_0_50px_rgba(8,145,178,0.2)] flex flex-col overflow-hidden">
+              <div className="bg-black border-b border-cyan-800 p-4 md:p-6 text-center shrink-0">
+                <AlertOctagon size={40} className="mx-auto text-cyan-500 mb-2 md:mb-4" />
+                <h2 className="text-2xl md:text-4xl font-black text-white tracking-widest">{active.title}</h2>
+                <p className="text-cyan-400 text-sm md:text-lg mt-1 md:mt-2 tracking-widest">{active.subtitle}</p>
               </div>
-              <div className="p-8">
-                <h3 className="text-xl font-bold text-cyan-600 mb-6 border-b border-cyan-900 pb-2">INCIDENT BRIEFING & TECHNICAL DETAILS</h3>
-                <ul className="space-y-4">
+              <div className="p-4 md:p-8 overflow-y-auto flex-1">
+                <h3 className="text-lg md:text-xl font-bold text-cyan-600 mb-4 border-b border-cyan-900 pb-2">INCIDENT BRIEFING & TECHNICAL DETAILS</h3>
+                <ul className="space-y-3 md:space-y-4">
                   {active.details.map((detail, idx) => {
                     const [prefix, ...rest] = detail.split(':');
                     return (
-                      <li key={idx} className="flex gap-4 items-start">
+                      <li key={idx} className="flex gap-3 md:gap-4 items-start">
                         <span className="text-cyan-400 font-bold mt-1">&gt;</span>
-                        <span className="text-cyan-100 text-lg leading-relaxed">
+                        <span className="text-cyan-100 text-sm md:text-lg leading-relaxed">
                           <strong className="text-cyan-300">{prefix}:</strong>{rest.join(':')}
                         </span>
                       </li>
@@ -671,11 +671,11 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
                   })}
                 </ul>
               </div>
-              <div className="bg-black border-t border-cyan-900 p-6 flex justify-between items-center">
+              <div className="bg-black border-t border-cyan-900 p-4 md:p-6 flex justify-between items-center shrink-0">
                 <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="text-cyan-700 hover:text-cyan-400 font-bold flex items-center gap-2 transition-colors">
                   <XCircle size={20} /> CANCEL
                 </button>
-                <button onClick={() => setShowBriefing(false)} className="bg-cyan-600 hover:bg-cyan-500 text-black px-8 py-4 font-black tracking-widest rounded flex items-center gap-3 shadow-[0_0_20px_rgba(8,145,178,0.4)] transition-all">
+                <button onClick={() => setShowBriefing(false)} className="bg-cyan-600 hover:bg-cyan-500 text-black px-4 md:px-8 py-3 md:py-4 font-black tracking-widest rounded flex items-center gap-2 md:gap-3 shadow-[0_0_20px_rgba(8,145,178,0.4)] transition-all">
                   INITIALIZE SIMULATION <PlayCircle size={24} />
                 </button>
               </div>
@@ -959,21 +959,21 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         </div>
 
         {/* FOOTER CONTROLS */}
-        <div className="min-h-[100px] bg-black border-t border-cyan-900 flex items-center justify-between px-12 relative z-[80]">
-          <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="text-cyan-600 hover:text-cyan-400 font-bold tracking-widest flex items-center gap-3 text-lg transition-colors">
-            <XCircle size={24} /> EXIT TO HOME
+        <div className="min-h-[100px] bg-black border-t border-cyan-900 flex items-center justify-between px-4 md:px-12 relative z-[80]">
+          <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="text-cyan-600 hover:text-cyan-400 font-bold tracking-widest flex items-center gap-2 md:gap-3 text-sm md:text-lg transition-colors">
+            <XCircle size={24} /> EXIT
           </button>
 
           {quizState === 'success' ? (
-            <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="bg-green-600 text-black px-10 py-5 font-black tracking-widest text-xl rounded hover:bg-green-500 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all">
+            <button onClick={() => {setIsFullScreen(false); setShowBriefing(true);}} className="bg-green-600 text-black px-4 md:px-10 py-3 md:py-5 font-black tracking-widest text-sm md:text-xl rounded hover:bg-green-500 shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all">
               MISSION ACCOMPLISHED
             </button>
           ) : (step >= active.totalSteps && wrongPath) ? (
-            <button onClick={handleRetry} className="bg-yellow-600 text-black px-10 py-5 font-black tracking-widest text-xl rounded hover:bg-yellow-500 flex items-center gap-3 shadow-[0_0_30px_rgba(202,138,4,0.4)] transition-all transform hover:scale-105">
-              <AlertTriangle size={28} /> RE-EVALUATE DECISION
+            <button onClick={handleRetry} className="bg-yellow-600 text-black px-4 md:px-10 py-3 md:py-5 font-black tracking-widest text-sm md:text-xl rounded hover:bg-yellow-500 flex items-center gap-2 md:gap-3 shadow-[0_0_30px_rgba(202,138,4,0.4)] transition-all transform hover:scale-105">
+              <AlertTriangle size={24} /> RE-EVALUATE
             </button>
           ) : (
-            <button onClick={handleNextStep} disabled={quizState === 'active'} className="bg-cyan-600 text-black px-12 py-5 font-black tracking-widest text-xl rounded hover:bg-cyan-500 disabled:opacity-30 transition-all flex items-center gap-3">
+            <button onClick={handleNextStep} disabled={quizState === 'active'} className="bg-cyan-600 text-black px-6 md:px-12 py-3 md:py-5 font-black tracking-widest text-sm md:text-xl rounded hover:bg-cyan-500 disabled:opacity-30 transition-all flex items-center gap-2 md:gap-3">
               NEXT PHASE <PlayCircle size={24} />
             </button>
           )}
