@@ -241,22 +241,22 @@ function ReferencesView() {
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">Regina Seaways (2018)</div>
               <div className="text-sm text-cyan-700 mb-2">Engine Cross-Contamination</div>
-              <p className="text-slate-400 text-xs">Reference: Official investigation reports detailing the catastrophic starboard engine failure and subsequent toxic smoke cross-contamination via interconnected ventilation ducts in the Baltic Sea.</p>
+              <p className="text-slate-400 text-xs">Reference:Reuters & gCaptain .</p>
             </li>
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">F/V Kaltan (2026)</div>
               <div className="text-sm text-cyan-700 mb-2">Confined Space Gas Leak</div>
-              <p className="text-slate-400 text-xs">Reference: Maritime accident reports regarding the Freon gas leak during compressor repairs at Gamcheon Port, Busan, leading to heavy gas displacement in an unventilated fish hold.</p>
+              <p className="text-slate-400 text-xs">Reference: ShipFinder Maritime Accidents Archive.</p>
             </li>
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">INS Ranvir (2022)</div>
               <div className="text-sm text-cyan-700 mb-2">Mislabeled Refrigerant Explosion</div>
-              <p className="text-slate-400 text-xs">Reference: Reports detailing the forward machinery room explosion aboard the destroyer caused by accidentally charging the AC plant with highly flammable R-152a hydrocarbon instead of standard R-22 Freon.</p>
+              <p className="text-slate-400 text-xs">Reference: Hindustan Times / Indian Defense News.</p>
             </li>
             <li className="bg-slate-900/50 p-4 border border-slate-800 rounded">
               <div className="font-bold text-cyan-300 text-lg mb-1">Al-Salam Boccaccio 98</div>
               <div className="text-sm text-cyan-700 mb-2">Ro-Ro Deck Ventilation Fed Fire</div>
-              <p className="text-slate-400 text-xs">Reference: Investigation into the Red Sea sinking, highlighting the critical failure to secure forced-draft vehicle deck ventilation fans, which continuously fed oxygen to the internal fire.</p>
+              <p className="text-slate-400 text-xs">Reference: Panama Maritime Authority / RoRoSAFE.</p>
             </li>
           </ul>
         </div>
@@ -273,7 +273,7 @@ function ReferencesView() {
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">CLAUDE & GEMINI</div>
                <div className="text-xs text-blue-400 font-bold mb-2">AI LOGIC & CODE GENERATION</div>
-               <p className="text-slate-400 text-[10px]">React architectures, interactive thermodynamics logic, dynamic SVG animations, and immersive presentation sequencing generated with AI assistance.</p>
+               <p className="text-slate-400 text-[10px]">Immersive presentation sequencing generated with AI assistance.</p>
             </div>
             
             <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-sky-500 transition-colors">
@@ -282,7 +282,7 @@ function ReferencesView() {
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">VS CODE</div>
                <div className="text-xs text-sky-400 font-bold mb-2">INTEGRATED DEVELOPMENT ENVIRONMENT</div>
-               <p className="text-slate-400 text-[10px]">Local code editing, component structuring, and project workspace management.</p>
+               <p className="text-slate-400 text-[10px]">Local code editing, and project workspace management.</p>
             </div>
 
             <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-purple-500 transition-colors">
@@ -291,7 +291,7 @@ function ReferencesView() {
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">GITHUB</div>
                <div className="text-xs text-purple-400 font-bold mb-2">VERSION CONTROL & REPOSITORY</div>
-               <p className="text-slate-400 text-[10px]">Source code storage, iterative branch management, component organization, and continuous integration pipeline handling.</p>
+               <p className="text-slate-400 text-[10px]">Source code storage.</p>
             </div>
 
             <div className="bg-slate-900/50 flex flex-col items-center justify-center p-6 text-center border border-slate-800 rounded hover:border-white transition-colors">
@@ -300,7 +300,7 @@ function ReferencesView() {
                </div>
                <div className="font-black text-white text-xl tracking-widest mb-2">VERCEL</div>
                <div className="text-xs text-slate-300 font-bold mb-2">CLOUD HOSTING & DEPLOYMENT</div>
-               <p className="text-slate-400 text-[10px]">Live global edge-network deployment, SSL certification, and real-time production build rendering for the interactive web application.</p>
+               <p className="text-slate-400 text-[10px]">Live global network deployment.</p>
             </div>
           </div>
         </div>
@@ -494,13 +494,13 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         { text: "Increase Port engine speed to outrun the smoke.", correct: false }
       ],
       logs: [
-        "SLIDE 1: 2200 HRS - Vessel underway in Baltic Sea. Port and Stbd Engines operating normally.",
-        "SLIDE 2: 2210 HRS - Heavy vibrations detected in the Starboard Engine block.",
-        "SLIDE 3: 2212 HRS - Starboard Engine suffers a catastrophic mechanical failure. Fire breaks out.",
-        "SLIDE 4: 2215 HRS - Toxic smoke rises into the shared, interconnected ventilation ducting.",
-        "SLIDE 5: 2216 HRS - Smoke travels freely across the un-dampered duct toward the running Port engine.",
-        "SLIDE 6: 2218 HRS - Port engine air intakes ingest thick toxic smoke and particulate matter.",
-        "SLIDE 7: 2220 HRS - Port engine chokes and stalls. Blackout. PROPULSION LOST."
+        "Vessel underway in Baltic Sea. Port and Stbd Engines operating normally.",
+        "Heavy vibrations detected in the Starboard Engine block.",
+        "Starboard Engine suffers a catastrophic mechanical failure. Fire breaks out.",
+        "Toxic smoke rises into the shared, interconnected ventilation ducting.",
+        "Smoke travels freely across the un-dampered duct toward the running Port engine.",
+        "Port engine air intakes ingest thick toxic smoke and particulate matter.",
+        "Port engine chokes and stalls. Blackout. PROPULSION LOST."
       ]
     },
     {
@@ -516,14 +516,14 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         { text: "Send them in immediately with standard coveralls to find and patch the leak fast.", correct: false }
       ],
       logs: [
-        "SLIDE 1: Sep 15, 2026 - F/V Kaltan docked for repairs at Gamcheon Port, Busan, South Korea.",
-        "SLIDE 2: 08:30 HRS - Refrigeration plant mechanical seal fails during maintenance.",
-        "SLIDE 3: 08:32 HRS - Heavy Freon coolant leaks out and begins sinking into the unventilated fish hold.",
-        "SLIDE 4: 08:35 HRS - Pressure drop alarm sounds in the wheelhouse.",
-        "SLIDE 5: 08:36 HRS - Crew members rush to the lower deck entrance without protective equipment.",
-        "SLIDE 6: 08:37 HRS - Crew descends into the hold where Freon has displaced all oxygen.",
-        "SLIDE 7: 08:40 HRS - Crew members suffer immediate cardiac arrest due to asphyxiation.",
-        "SLIDE 8: 08:45 HRS - Emergency services arrive. CATASTROPHIC FATALITIES."
+        "Sep 15, 2026 - F/V Kaltan docked for repairs at Gamcheon Port, Busan, South Korea.",
+        "Refrigeration plant mechanical seal fails during maintenance.",
+        "Heavy Freon coolant leaks out and begins sinking into the unventilated fish hold.",
+        "Pressure drop alarm sounds in the wheelhouse.",
+        "Crew members rush to the lower deck entrance without protective equipment.",
+        "Crew descends into the hold where Freon has displaced all oxygen.",
+        "Crew members suffer immediate cardiac arrest due to asphyxiation.",
+        "Emergency services arrive. CATASTROPHIC FATALITIES."
       ]
     },
     {
@@ -539,16 +539,16 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         { text: "Proceed with charging. It is a standard drop-in replacement.", correct: false }
       ],
       logs: [
-        "SLIDE 1: 0800 HRS - INS Ranvir docked. Forward AC Plant operating at standard capacity.",
-        "SLIDE 2: 0810 HRS - Routine topping-up of R-22 refrigerant approved by Engineering Officer.",
-        "SLIDE 3: 0815 HRS - Shore contractor arrives in the forward machinery room with cylinders.",
-        "SLIDE 4: 0818 HRS - Contractor prepares manifold gauges. Cylinder is explicitly labeled 'R-152a'.",
-        "SLIDE 5: 0820 HRS - Contractor begins attaching the high-pressure charging hose to the AC low-side valve.",
-        "SLIDE 6: 0822 HRS - Cylinder valve opened. Highly flammable R-152a hydrocarbon enters the system.",
-        "SLIDE 7: 0823 HRS - System pressure mismatch causes a mechanical seal failure on the compressor casing.",
-        "SLIDE 8: 0824 HRS - Combustible gas begins pooling in the unventilated compartment. Toxic gas alarms sound.",
-        "SLIDE 9: 0825 HRS - An automatic electrical contactor relay trips, generating a high-voltage arc spark.",
-        "SLIDE 10: 0825:02 HRS - Ignition. Expanding gas creates a massive shockwave. HULL BREACH. CATASTROPHIC LOSS."
+        "INS Ranvir docked. Forward AC Plant operating at standard capacity.",
+        "Routine topping-up of R-22 refrigerant approved by Engineering Officer.",
+        "Shore contractor arrives in the forward machinery room with cylinders.",
+        "Contractor prepares manifold gauges. Cylinder is explicitly labeled 'R-152a'.",
+        "Contractor begins attaching the high-pressure charging hose to the AC low-side valve.",
+        "Cylinder valve opened. Highly flammable R-152a hydrocarbon enters the system.",
+        "System pressure mismatch causes a mechanical seal failure on the compressor casing.",
+        "Combustible gas begins pooling in the unventilated compartment. Toxic gas alarms sound.",
+        "An automatic electrical contactor relay trips, generating a high-voltage arc spark.",
+        "Ignition. Expanding gas creates a massive shockwave. HULL BREACH. CATASTROPHIC LOSS."
       ]
     },
     {
@@ -564,15 +564,15 @@ function IncidentArchive({ isFullScreen, setIsFullScreen }) {
         { text: "Keep fans running on HIGH to clear the smoke so the fire team can see.", correct: false }
       ],
       logs: [
-        "SLIDE 1: 2300 HRS - Ro-Ro vehicle deck fully loaded. Forced draft HVAC active at 100% capacity.",
-        "SLIDE 2: 2315 HRS - Spark in a parked vehicle ignites a localized fire. Smoke begins to rise.",
-        "SLIDE 3: 2320 HRS - Smoke detectors trigger on the bridge. General Alarm sounds.",
-        "SLIDE 4: 2322 HRS - CRITICAL OVERSIGHT. Crew responds with hoses, but leaves the massive deck ventilation fans running.",
-        "SLIDE 5: 2325 HRS - The continuous supply of fresh air acts as a bellows, feeding oxygen to the fire.",
-        "SLIDE 6: 2330 HRS - Fire expands uncontrollably. Crew uses high-volume seawater firefighting monitors.",
-        "SLIDE 7: 0030 HRS - Scuppers block with debris. Thousands of tons of water accumulate on the deck.",
-        "SLIDE 8: 0100 HRS - Free Surface Effect shifts the center of gravity. Vessel severely destabilized.",
-        "SLIDE 9: 0115 HRS - The ship capsizes and sinks. CATASTROPHIC LOSS."
+        "Ro-Ro vehicle deck fully loaded. Forced draft HVAC active at 100% capacity.",
+        "Spark in a parked vehicle ignites a localized fire. Smoke begins to rise.",
+        "Smoke detectors trigger on the bridge. General Alarm sounds.",
+        "CRITICAL OVERSIGHT. Crew responds with hoses, but leaves the massive deck ventilation fans running.",
+        "The continuous supply of fresh air acts as a bellows, feeding oxygen to the fire.",
+        "Fire expands uncontrollably. Crew uses high-volume seawater firefighting monitors.",
+        "Scuppers block with debris. Thousands of tons of water accumulate on the deck.",
+        "Free Surface Effect shifts the center of gravity. Vessel severely destabilized.",
+        "The ship capsizes and sinks. CATASTROPHIC LOSS."
       ]
     }
   ];
